@@ -22,6 +22,7 @@ class Time extends Component {
   }
 
   formatTimeUnit = time => (time < 10 ? "0" + time : time);
+
   getFormatedTime = () => {
     let date = new Date();
     var day = date.getDate();

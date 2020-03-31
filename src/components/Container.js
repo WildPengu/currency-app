@@ -74,7 +74,7 @@ class Container extends React.Component {
           currencyValue={this.state.currencyValue}
         />
         {currencyInfo}
-        <Time startCurrentTimeInterval={this.startCurrentTimeInterval} />
+        <Time />
       </div>
     );
   }
