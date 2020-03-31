@@ -1,0 +1,11 @@
+.currency-options select {
+  height: 30px;
+  width: 80px;
+  border: none;
+  -webkit-appearance: none;
+  color: white;
+  background-color: #f27724;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+}

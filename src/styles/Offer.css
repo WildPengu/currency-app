@@ -1,0 +1,24 @@
+.offer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offer-title {
+  background-color: black;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+}
+
+.offer-value {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.offer-currency {
+  margin-left: 5px;
+}

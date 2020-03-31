@@ -1,0 +1,27 @@
+.time-options {
+  display: flex;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.time-options select {
+  height: 30px;
+  width: 80px;
+  border: none;
+  -webkit-appearance: none;
+  color: #f27724;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.orange-box {
+  background-color: #f27724;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

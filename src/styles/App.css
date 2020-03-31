@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1a1a1a;
+}
