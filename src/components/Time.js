@@ -6,13 +6,13 @@ class Time extends Component {
     super(props);
     this.state = {
       intervalCurrentTime: null,
-      actualTime: ""
+      actualTime: "",
     };
   }
 
   componentDidMount() {
     this.setState({
-      actualTime: this.getFormatedTime()
+      actualTime: this.getFormatedTime(),
     });
     this.startCurrentTimeInterval();
   }
@@ -21,7 +21,7 @@ class Time extends Component {
     clearInterval(this.state.intervalCurrentTime);
   }
 
-  formatTimeUnit = time => (time < 10 ? "0" + time : time);
+  formatTimeUnit = (time) => (time < 10 ? "0" + time : time);
 
   getFormatedTime = () => {
     let date = new Date();
@@ -36,16 +36,18 @@ class Time extends Component {
     ${this.formatTimeUnit(hours)}:
     ${this.formatTimeUnit(min)}:
     ${this.formatTimeUnit(sec)}
-     / ${day}.${month}.${year}`;
+     / ${this.formatTimeUnit(day)}:
+     ${this.formatTimeUnit(month)}:
+     ${year}`;
   };
 
   startCurrentTimeInterval = () => {
     this.setState({
       intervalCurrentTime: setInterval(() => {
         this.setState({
-          actualTime: this.getFormatedTime()
+          actualTime: this.getFormatedTime(),
         });
-      }, 1000)
+      }, 1000),
     });
   };
 
